@@ -94,11 +94,17 @@ header nav .fa-bars{
     position: relative;
     height: 100vh;
     overflow: hidden;
-    display: none;
 
 }
 .hero img{
     width: 100%;
+}
+@media(max-width: 767px){
+    .hero img{
+        height: 100vh;
+        object-fit: cover;
+
+    }
 }
 .hero .hero-info{
     position: absolute;
@@ -117,27 +123,48 @@ header nav .fa-bars{
 
     /* outline: 1px solid white; */
 }
+@media(max-width: 767px){
+    .hero .hero-info{
+        top:auto;
+        left: 10px;
+        background-color: #00000038;
+        left: 20px;
+        border-radius: 12px;
+        bottom: 0;
+    }
+    }
 .hero .hero-info h1{
     color: white;
     font-size: 74px;
     font-weight: 900;
     line-height: 74px;
 }
+@media(max-width: 767px){
+    .hero .hero-info h1{
+        font-size: 56px;
+        line-height: 50px;
+    }
+}
 .hero-info h1 span{
     font-size: 38px;
     font-weight: 400;
     display: block;
 }
+@media(max-width: 767px){
+    .hero .hero-info h1 span{
+        font-size: 28px;
+    }
+}
 .hero-info .cta-btn{
     /* call to action cta*/
     background: #f70142;
     color: white;
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 700;
-    padding: 12px 30px;
+    padding: 10px 20px;
     border-radius: 24px;
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 10px;
     transition: background-color ease 0.5s ;
 }
 .hero-info .cta-btn:hover{
@@ -150,6 +177,12 @@ header nav .fa-bars{
     text-align: right;
     padding-right: 60px;
     
+}
+@media(max-width: 767px){
+    .hero .swiper-pagination {
+        bottom: 20px;
+        padding-right: 30px;
+    }
 }
 
 .hero .swiper-pagination-bullet {

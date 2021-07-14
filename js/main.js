@@ -23,5 +23,5 @@
         mobileMenuIcon.addEventListener('click', function(){
           // to add extra class in css
           // we can use add and remove to alter instead toggle
-          menu.classList.toggle('open'); 
+          menu.classList.toggle('open');
         })
