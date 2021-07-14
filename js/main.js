@@ -16,3 +16,12 @@
               },
             
         });
+
+        // mobile menu
+        let mobileMenuIcon = document.querySelector('.fa-bars')
+        let menu =document.querySelector('header .menu')
+        mobileMenuIcon.addEventListener('click', function(){
+          // to add extra class in css
+          // we can use add and remove to alter instead toggle
+          menu.classList.toggle('open'); 
+        })

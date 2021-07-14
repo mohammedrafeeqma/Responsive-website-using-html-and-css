@@ -21,8 +21,18 @@ header{
     width: 100%;
     background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
+@media(max-width:767px){
+    header{
+        padding: 20px;
+    }
+}
 header .logo img{
     width: 79px;
+}
+@media(max-width: 767px){
+    header .logo img{
+        width: 45px;
+    }
 }
 header nav{
     display: flex;
@@ -30,9 +40,34 @@ header nav{
     align-items: center;
 
 }
-.navbar ul{
+header nav .fa-bars{
+    display: none;
+}
+@media(max-width: 767px){
+    header nav .fa-bars{
+        display: block;
+        padding-right: 25px;
+    }
+}
+.navbar .menu{
     display: flex;
     
+}
+@media(max-width: 767px){
+    .navbar .menu{
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80px;
+        background: black;
+        padding: 30px 0;
+        display: none;
+
+    }
+    .navbar .menu.open{
+        display: block;
+    }
 }
 .navbar a{
     color: white;
@@ -59,6 +94,7 @@ header nav{
     position: relative;
     height: 100vh;
     overflow: hidden;
+    display: none;
 
 }
 .hero img{
@@ -106,4 +142,23 @@ header nav{
 }
 .hero-info .cta-btn:hover{
     background-color: black;
+}
+
+/* css for slide */
+.hero .swiper-pagination {
+    bottom: 140px;
+    text-align: right;
+    padding-right: 60px;
+    
+}
+
+.hero .swiper-pagination-bullet {
+    width: 23px;
+    height: 23px;
+    background: transparent;
+    border: 2px solid white;
+    opacity: 1;
+}
+.hero .swiper-pagination-bullet-active {
+    border: 2px solid red;
 }
